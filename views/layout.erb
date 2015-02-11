@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Full Circle</title>
+
+  <%= yield_content :meta %>
+
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="container">
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      &copy; <%= Time.now.year %>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="/assets/app.js"></script>
+  <script src="/assets/retina.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $body-bg;
+  color: $text-color;
+  font: 0.9375em/1.333333333em "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "Georgia", Times, serif;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
