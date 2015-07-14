@@ -1,12 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.8)
     backports (3.6.4)
     hike (1.2.3)
     multi_json (1.10.1)
     puma (2.11.0)
       rack (>= 1.1, < 2.0)
     rack (1.6.0)
+    rack-canonical-host (0.1.0)
+      addressable
+      rack (~> 1.0)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
@@ -42,6 +46,7 @@ PLATFORMS
 
 DEPENDENCIES
   puma
+  rack-canonical-host
   sass
   shotgun
   sinatra
@@ -49,3 +54,6 @@ DEPENDENCIES
   sprockets
   sprockets-helpers
   sprockets-sass
+
+BUNDLED WITH
+   1.10.5

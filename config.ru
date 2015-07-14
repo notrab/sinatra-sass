@@ -6,6 +6,8 @@ require 'sprockets-sass'
 require 'sprockets-helpers'
 require 'sass'
 
+use Rack::CanonicalHost, ENV['CANONICAL_HOST'] if ENV['CANONICAL_HOST']
+
 map '/assets' do
   env = Sprockets::Environment.new
 
@@ -24,4 +26,4 @@ map '/assets' do
 end
 
 require './app'
-run FullCircle
+run ExampleApp

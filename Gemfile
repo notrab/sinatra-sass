@@ -4,6 +4,7 @@ ruby '2.1.2'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'puma'
+gem 'rack-canonical-host'
 
 gem 'sass'
 gem 'sprockets'

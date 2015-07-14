@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Full Circle</title>
+  <title>Example App</title>
 
   <%= yield_content :meta %>
 
@@ -22,6 +22,7 @@
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="/assets/app.js"></script>
-  <script src="/assets/retina.min.js"></script>
+
+  <%= yield_content :scripts %>
 </body>
 </html>
